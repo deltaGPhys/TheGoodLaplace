@@ -20,7 +20,7 @@ a cooling vane on a heat sink, are held fixed (one end on the processor, one end
 distribution can be determined via this method.
 
 ### Execution
-The engine take values for the four corners of the region and creates linear gradients on each of the four edges, then loops through 
+The engine takes values for the four corners of the region and creates linear gradients on each of the four edges, then loops through 
 successive implementations of the algorithm, setting each cell's next value as the average of its neighbors' values, and scaling the
 color intensity accordingly. Over time, the solution relaxes to a steady state that fulfills the discrete Laplace equation. This can 
 take many generations in some cases. Notice that local maxima and minima do not occur in the interior (though saddle points are allowed).
