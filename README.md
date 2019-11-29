@@ -25,6 +25,7 @@ successive implementations of the algorithm, setting each cell's next value as t
 color intensity accordingly. Over time, the solution relaxes to a steady state that fulfill's the discrete Laplace equation. This can 
 take many generations in some cases. Notice that local maxima and minima do not occur in the interior (though saddle points are allowed).
 
-![Screenshot](TwoHighCorners.png)
-![Screenshot](OneHighCorner.png)
-![Screenshot](ThreeHighCorners.png)
+<img src = "TwoHighCorners.png" width="500px">
+<img src = "OneHighCorner.png" width="500px">
+<img src = "ThreeHighCorners.png" width="500px">
+
