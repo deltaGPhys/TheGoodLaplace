@@ -34,7 +34,7 @@ public class ForestFire {
 
     public static void main(String[] args) {
         ForestFire sim = new ForestFire(100,.005,.0001);
-        int[][] endingWorld = sim.simulate(400);
+        int[][] endingWorld = sim.simulate(101);
     }
 
     // Contains the logic for the starting scenario.
