@@ -7,7 +7,10 @@ public class SimpleWindow {
     static JPanel panel;
     static JFrame frame;
     private Integer dim = 0;
-    private Integer boxDim = 15;
+    private Integer boxDim = 5;
+    private static final Color BLACK = new Color(0, 0, 0);
+    private static final Color DARKGREEN = new Color(0, 125, 0);
+    private static final Color ORANGE = new Color(200, 150, 0);
 
     public SimpleWindow(Integer dimension) {
         this.dim = dimension * this.boxDim;
@@ -39,9 +42,11 @@ public class SimpleWindow {
             for (int j = 0; j < array[0].length; j++) {
                 g.drawRect(i * this.boxDim, j * this.boxDim, this.boxDim, this.boxDim);
                 if (array[i][j] == 0) {
-                    g.setColor(Color.WHITE);
+                    g.setColor(BLACK);
                 } else if (array[i][j] == 1) {
-                    g.setColor(Color.BLACK);
+                    g.setColor(DARKGREEN);
+                } else if (array[i][j] == 2) {
+                    g.setColor(ORANGE);
                 }
                 g.fillRect(i * this.boxDim-1, j * this.boxDim, this.boxDim+1, this.boxDim);
             }

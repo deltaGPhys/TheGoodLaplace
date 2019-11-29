@@ -9,26 +9,32 @@ public class ConwayGameOfLife {
     private int dimension;
     private int[][] world;
     private SimpleWindow displayWindow;
+    private double p;
+    private double f;
 
     public ConwayGameOfLife() {
 
     }
 
-    public ConwayGameOfLife(Integer dimension) {
+    public ConwayGameOfLife(Integer dimension, double p, double f) {
         this.displayWindow = new SimpleWindow(dimension);
         this.dimension = dimension;
         this.world = createRandomStart(this.dimension);
+        this.p = p;
+        this.f = f;
      }
 
-    public ConwayGameOfLife(Integer dimension, int[][] startmatrix) {
+    public ConwayGameOfLife(Integer dimension, int[][] startmatrix, double p, double f) {
         this.displayWindow = new SimpleWindow(dimension);
         this.dimension = dimension;
         this.world = startmatrix;
+        this.p = p;
+        this.f = f;
     }
 
     public static void main(String[] args) {
-        ConwayGameOfLife sim = new ConwayGameOfLife(50);
-        int[][] endingWorld = sim.simulate(50);
+        ConwayGameOfLife sim = new ConwayGameOfLife(100,.005,.0001);
+        int[][] endingWorld = sim.simulate(400);
     }
 
     // Contains the logic for the starting scenario.
@@ -50,7 +56,7 @@ public class ConwayGameOfLife {
 
             for (int i = 0; i < this.dimension; i++) {
                 for (int j = 0; j < this.dimension; j++) {
-                    next[i][j] = isAlive(i,j,current);
+                    next[i][j] = determineCellState(i,j,current);
                 }
             }
 
@@ -69,34 +75,24 @@ public class ConwayGameOfLife {
         }
     }
 
-    // Calculate if an individual cell should be alive in the next generation.
-    // Based on the game logic:
-	/*
-		Any live cell with fewer than two live neighbours dies, as if by needs caused by underpopulation.
-		Any live cell with more than three live neighbours dies, as if by overcrowding.
-		Any live cell with two or three live neighbours lives, unchanged, to the next generation.
-		Any dead cell with exactly three live neighbours cells will come to life.
-	*/
-    public int isAlive(int row, int col, int[][] world) {
+    public int determineCellState(int row, int col, int[][] world) {
         int dim = world[0].length;
-        int numNeighbors =
-                world[row][(col+1)%dim] + world[row][(dim+col-1)%dim] +
-                world[(row+1)%dim][col] + world[(dim+row-1)%dim][col] +
-                world[(row+1)%dim][(col+1)%dim] + world[(dim+row-1)%dim][(col+1)%dim] +
-                world[(row+1)%dim][(dim+col-1)%dim] + world[(dim+row-1)%dim][(dim+col-1)%dim];
+        int[] neighbors =
+                new int[] {world[row][(col+1)%dim], world[row][(dim+col-1)%dim],
+                world[(row+1)%dim][col], world[(dim+row-1)%dim][col],
+                world[(row+1)%dim][(col+1)%dim], world[(dim+row-1)%dim][(col+1)%dim],
+                world[(row+1)%dim][(dim+col-1)%dim], world[(dim+row-1)%dim][(dim+col-1)%dim]};
+        int countFire = (int) Arrays.stream(neighbors).filter(cell -> cell == 2).count();
+        int countTrees = (int) Arrays.stream(neighbors).filter(cell -> cell == 1).count();
 
-        if (world[row][col] == 1) {
-            if (numNeighbors == 3 || numNeighbors == 2) {
-                return 1;
-            } else {
-                return 0;
-            }
-        } else {
-            if (numNeighbors == 3) {
-                return 1;
-            }
+        if (world[row][col] == 1) { // trees
+            return (countFire > 0 || new Random().nextDouble() <= f) ? 2 : 1;
+        } else if (world[row][col] == 0) { // empties
+            return (new Random().nextDouble() <= p*(countTrees+1)) ? 1 : 0;
+        } else if (world[row][col] == 2) { // on fire
+            return 0;
         }
-        return world[row][col];
+        return 0;
     }
 
 
