@@ -21,12 +21,6 @@ public class LaplaceRelax {
         this.world = createStartBorders(this.dimension, topLeft, topRight, bottomLeft, bottomRight);
      }
 
-//    public static void main(String[] args) {
-//        int dim = 20;
-//        LaplaceRelax sim = new LaplaceRelax(dim,600/dim);
-//        double[][] endingWorld = sim.simulate(600);
-//    }
-
     public double getMaxHeight() {
         return maxHeight;
     }

@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdd26dce-ab60-4054-a8b9-a900f77bf74f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/goodlaplace/LaplaceRelaxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_rc_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fire100Gen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ForestFire.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TheGoodLaplace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forestfire/ForestFire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goodlaplace/LaplaceRelax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forestfire/SimpleWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goodlaplace/SimpleWindow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +29,7 @@
   </component>
   <component name="ProjectId" id="1UDFmvhA35QdzXpMUiJiRVbbfJq" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -73,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LaplaceRelaxTest.threeHighCorners">
+  <component name="RunManager" selected="JUnit.LaplaceRelaxTest.highAndLowCorners">
     <configuration name="LaplaceRelax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.goodlaplace.LaplaceRelax" />
       <module name="TheGoodLaplace" />
@@ -152,9 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LaplaceRelaxTest.highAndLowCorners" />
         <item itemvalue="JUnit.LaplaceRelaxTest.threeHighCorners" />
         <item itemvalue="JUnit.LaplaceRelaxTest.oneHighCorner" />
-        <item itemvalue="JUnit.LaplaceRelaxTest.highAndLowCorners" />
         <item itemvalue="Application.LaplaceRelax" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest" />
       </list>
@@ -173,7 +162,7 @@
       <workItem from="1574883424940" duration="12072000" />
       <workItem from="1574991279103" duration="4522000" />
       <workItem from="1575034395232" duration="2281000" />
-      <workItem from="1575037860686" duration="5662000" />
+      <workItem from="1575037860686" duration="6230000" />
     </task>
     <servers />
   </component>
