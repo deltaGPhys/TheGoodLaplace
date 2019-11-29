@@ -1,19 +1,30 @@
-This is a cellular automaton to simulate forest fires. Forked from (https://github.com/deltaGPhys/ConwayGameOfLife) -> (https://github.com/Zipcoder/ConwayGameOfLife)
+This is a relaxation-method solver for [Laplace's equation](https://en.wikipedia.org/wiki/Laplace%27s_equation). 
+Forked from (https://github.com/deltaGPhys/ForestFire) -> (https://github.com/deltaGPhys/ConwayGameOfLife) -> (https://github.com/Zipcoder/ConwayGameOfLife)
 
-### Rules
+### Background
+Laplace's equation requires that the divergence of the gradient is locally always zero, which has the effect that there 
+can be no local maxima or minima in the interior of the region. The boundary values are fixed, and interior values (or a function
+for interior values) need to be found to satisfy Laplace's equation.
 
-Each cell can be empty (black), occupied by a tree (green) or burning (orange).
+### Solving the Equation
+Finding such a function analytically for any but the simplest cases is often impossible, so numerical methods are used. 
+One such method is called *relaxation*. The discrete analogy to Laplace's equation is a condition that each interior cell's
+value is the average of its neighbors' values. While it's easy to find those averages, doing so changes the values of the neighbors,
+changing the average, and on and on. Eventually, applying this technique sequentially through many generations causes the interior
+state to "relax" to a steady state.
 
-(These four rules are from the model created by Drossel and Schwabl (1992))
-* A tree will catch fire if any neighboring cell is on fire
-* A burning tree cell will become empty
-* An empty cell will grow a tree with probability *t*
-* A tree will catch fire with probability *f* (even if it's not near a burning tree; this simulates lightning strikes)
+### Applications
+This is useful to determine the electric potential (or any potential) and in fluid flows, given boundary conditions. An 
+easier-to-visualize application comes from heat transfer, though. Imagining that the boundaries of a piece of material, like
+a cooling vane on a heat sink, are held fixed (one end on the processor, one end in the air, etc.), the steady-state temperature 
+distribution can be determined via this method.
 
-So that fire does not burn constantly, *t* >> *f*, and the time for a large clump to burn through is significantly 
-greater than the expectation value for a tree to grow adjacent to the fire.
+### Execution
+The engine take values for the four corners of the region and creates linear gradients on each of the four edges, then loops through 
+successive implementations of the algorithm, setting each cell's next value as the average of its neighbors' values, and scaling the
+color intensity accordingly. Over time, the solution relaxes to a steady state that fulfill's the discrete Laplace equation. This can 
+take many generations in some cases. Notice that local maxima and minima do not occur in the interior (though saddle points are allowed).
 
-An additional rule is used here to encourage a clumping behavior in the trees: the probability of a tree growing 
-in an empty cell is *t*(numNeighbors+1).
-
-![Screenshot](Fire100Gen.png)
+![Screenshot](TwoHighCorners.png)
+![Screenshot](OneHighCorner.png)
+![Screenshot](ThreeHighCorners.png)

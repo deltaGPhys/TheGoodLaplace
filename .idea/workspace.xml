@@ -2,13 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdd26dce-ab60-4054-a8b9-a900f77bf74f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goodlaplace/LaplaceRelaxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_rc_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fire100Gen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForestFire.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TheGoodLaplace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forestfire/ForestFire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goodlaplace/LaplaceRelax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forestfire/SimpleWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goodlaplace/SimpleWindow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,12 +44,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.goodlaplace" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,13 +73,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ForestFire">
-    <configuration name="ForestFire" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.forestfire.ForestFire" />
-      <module name="ForestFire" />
+  <component name="RunManager" selected="JUnit.LaplaceRelaxTest.threeHighCorners">
+    <configuration name="LaplaceRelax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.goodlaplace.LaplaceRelax" />
+      <module name="TheGoodLaplace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.forestfire.*" />
+          <option name="PATTERN" value="com.goodlaplace.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,10 +88,10 @@
       </method>
     </configuration>
     <configuration name="ConwayGameOfLifeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ForestFire" />
+      <module name="TheGoodLaplace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.forestfire.*" />
+          <option name="PATTERN" value="com.goodlaplace.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,108 +102,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayGameOfLifeTest.isAliveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ForestFire" />
+    <configuration name="LaplaceRelaxTest.highAndLowCorners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheGoodLaplace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.forestfire.*" />
+          <option name="PATTERN" value="com.goodlaplace.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zipcodeconway" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
-      <option name="METHOD_NAME" value="isAliveTest" />
+      <option name="PACKAGE_NAME" value="com.goodlaplace" />
+      <option name="MAIN_CLASS_NAME" value="com.goodlaplace.LaplaceRelaxTest" />
+      <option name="METHOD_NAME" value="highAndLowCorners" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayGameOfLifeTest.runTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ForestFire" />
+    <configuration name="LaplaceRelaxTest.oneHighCorner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheGoodLaplace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.forestfire.*" />
+          <option name="PATTERN" value="com.goodlaplace.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zipcodeconway" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
-      <option name="METHOD_NAME" value="runTest1" />
+      <option name="PACKAGE_NAME" value="com.goodlaplace" />
+      <option name="MAIN_CLASS_NAME" value="com.goodlaplace.LaplaceRelaxTest" />
+      <option name="METHOD_NAME" value="oneHighCorner" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayGameOfLifeTest.runTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ForestFire" />
+    <configuration name="LaplaceRelaxTest.threeHighCorners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheGoodLaplace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.forestfire.*" />
+          <option name="PATTERN" value="com.goodlaplace.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zipcodeconway" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
-      <option name="METHOD_NAME" value="runTest2" />
+      <option name="PACKAGE_NAME" value="com.goodlaplace" />
+      <option name="MAIN_CLASS_NAME" value="com.goodlaplace.LaplaceRelaxTest" />
+      <option name="METHOD_NAME" value="threeHighCorners" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="ForestFire" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="ForestFire" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ForestFire" />
+        <item itemvalue="JUnit.LaplaceRelaxTest.threeHighCorners" />
+        <item itemvalue="JUnit.LaplaceRelaxTest.oneHighCorner" />
+        <item itemvalue="JUnit.LaplaceRelaxTest.highAndLowCorners" />
+        <item itemvalue="Application.LaplaceRelax" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest" />
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest2" />
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.isAliveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +172,8 @@
       <updated>1574883421821</updated>
       <workItem from="1574883424940" duration="12072000" />
       <workItem from="1574991279103" duration="4522000" />
+      <workItem from="1575034395232" duration="2281000" />
+      <workItem from="1575037860686" duration="5662000" />
     </task>
     <servers />
   </component>
@@ -208,5 +192,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/goodlaplace/SimpleWindow.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/goodlaplace/LaplaceRelax.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/goodlaplace/LaplaceRelax.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

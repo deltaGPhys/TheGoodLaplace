@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ForestFire.iml" filepath="$PROJECT_DIR$/ForestFire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TheGoodLaplace.iml" filepath="$PROJECT_DIR$/TheGoodLaplace.iml" />
     </modules>
   </component>
 </project>
