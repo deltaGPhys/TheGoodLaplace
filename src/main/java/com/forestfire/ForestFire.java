@@ -1,10 +1,10 @@
-package com.zipcodeconway;
+package com.forestfire;
 
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-public class ConwayGameOfLife {
+public class ForestFire {
 
     private int dimension;
     private int[][] world;
@@ -12,11 +12,11 @@ public class ConwayGameOfLife {
     private double p;
     private double f;
 
-    public ConwayGameOfLife() {
+    public ForestFire() {
 
     }
 
-    public ConwayGameOfLife(Integer dimension, double p, double f) {
+    public ForestFire(Integer dimension, double p, double f) {
         this.displayWindow = new SimpleWindow(dimension);
         this.dimension = dimension;
         this.world = createRandomStart(this.dimension);
@@ -24,7 +24,7 @@ public class ConwayGameOfLife {
         this.f = f;
      }
 
-    public ConwayGameOfLife(Integer dimension, int[][] startmatrix, double p, double f) {
+    public ForestFire(Integer dimension, int[][] startmatrix, double p, double f) {
         this.displayWindow = new SimpleWindow(dimension);
         this.dimension = dimension;
         this.world = startmatrix;
@@ -33,7 +33,7 @@ public class ConwayGameOfLife {
     }
 
     public static void main(String[] args) {
-        ConwayGameOfLife sim = new ConwayGameOfLife(100,.005,.0001);
+        ForestFire sim = new ForestFire(100,.005,.0001);
         int[][] endingWorld = sim.simulate(400);
     }
 

@@ -1,4 +1,4 @@
-package com.zipcodeconway;
+package com.forestfire;
 
 import javax.swing.*;
 import java.awt.*;
